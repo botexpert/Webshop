@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webshop.API", "Webshop.API\Webshop.API.csproj", "{119E8750-9D4C-495A-BADE-FB3096DCB484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webshop.Infrastructure", "Webshop.Infrastructure\Webshop.Infrastructure.csproj", "{54B27305-7F78-4A00-98E6-A41FA261331F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webshop.Domain", "Webshop.Domain\Webshop.Domain.csproj", "{5DFEDC1A-AC13-4FDC-A8F0-1567C51D5430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webshop.Application", "Webshop.Application\Webshop.Application.csproj", "{E09B96B5-CDDF-405A-9D20-37BE8048FD3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webshop.Tests", "Webshop.Tests\Webshop.Tests.csproj", "{F01F263C-6BB6-44DB-AFCD-8EDBC18BA59D}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|x64 = Debug|x64
+        Release|x64 = Release|x64
+    EndGlobalSection
+    GlobalSection(SolutionProperties) = preSolution
+        HideSolutionNode = FALSE
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {119E8750-9D4C-495A-BADE-FB3096DCB484}.Debug|x64.ActiveCfg = Debug|x64
+        {119E8750-9D4C-495A-BADE-FB3096DCB484}.Debug|x64.Build.0 = Debug|x64
+        {119E8750-9D4C-495A-BADE-FB3096DCB484}.Release|x64.ActiveCfg = Release|x64
+        {119E8750-9D4C-495A-BADE-FB3096DCB484}.Release|x64.Build.0 = Release|x64
+        {54B27305-7F78-4A00-98E6-A41FA261331F}.Debug|x64.ActiveCfg = Debug|x64
+        {54B27305-7F78-4A00-98E6-A41FA261331F}.Debug|x64.Build.0 = Debug|x64
+        {54B27305-7F78-4A00-98E6-A41FA261331F}.Release|x64.ActiveCfg = Release|x64
+        {54B27305-7F78-4A00-98E6-A41FA261331F}.Release|x64.Build.0 = Release|x64
+        {5DFEDC1A-AC13-4FDC-A8F0-1567C51D5430}.Debug|x64.ActiveCfg = Debug|x64
+        {5DFEDC1A-AC13-4FDC-A8F0-1567C51D5430}.Debug|x64.Build.0 = Debug|x64
+        {5DFEDC1A-AC13-4FDC-A8F0-1567C51D5430}.Release|x64.ActiveCfg = Release|x64
+        {5DFEDC1A-AC13-4FDC-A8F0-1567C51D5430}.Release|x64.Build.0 = Release|x64
+        {E09B96B5-CDDF-405A-9D20-37BE8048FD3F}.Debug|x64.ActiveCfg = Debug|x64
+        {E09B96B5-CDDF-405A-9D20-37BE8048FD3F}.Debug|x64.Build.0 = Debug|x64
+        {E09B96B5-CDDF-405A-9D20-37BE8048FD3F}.Release|x64.ActiveCfg = Release|x64
+        {E09B96B5-CDDF-405A-9D20-37BE8048FD3F}.Release|x64.Build.0 = Release|x64
+        {F01F263C-6BB6-44DB-AFCD-8EDBC18BA59D}.Debug|x64.ActiveCfg = Debug|x64
+        {F01F263C-6BB6-44DB-AFCD-8EDBC18BA59D}.Debug|x64.Build.0 = Debug|x64
+        {F01F263C-6BB6-44DB-AFCD-8EDBC18BA59D}.Release|x64.ActiveCfg = Release|x64
+        {F01F263C-6BB6-44DB-AFCD-8EDBC18BA59D}.Release|x64.Build.0 = Release|x64
+    EndGlobalSection
+EndGlobal
+
