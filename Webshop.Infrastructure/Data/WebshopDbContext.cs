@@ -9,11 +9,13 @@ namespace Webshop.Infrastructure.Data
             : base(options) { }
 
         public DbSet<ShopItem> ShopItems { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Apply configurations for entities
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(WebshopDbContext).Assembly);
+            modelBuilder.Entity<ShopItem>().ToTable("ShopItems");
+            modelBuilder.Entity<Account>().ToTable("Accounts");
 
             base.OnModelCreating(modelBuilder);
         }

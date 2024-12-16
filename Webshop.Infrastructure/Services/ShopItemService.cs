@@ -7,16 +7,16 @@ namespace Webshop.Infrastructure.Services
 {
     public class ShopItemService : IShopItemService
     {
-        private readonly IRepository<ShopItem> _repository;
+        private readonly IShopItemRepository _repository;
 
-        public ShopItemService(IRepository<ShopItem> repository)
+        public ShopItemService(IShopItemRepository repository)
         {
             _repository = repository;
         }
 
         public async Task<IEnumerable<ShopItemDto>> GetAllItemsAsync()
         {
-            var items = await _repository.GetAllAsync();
+            var items = await _repository.GetShopItemsAsync();
             return items.Select(item => new ShopItemDto
             {
                 Id = item.Id,
@@ -66,9 +66,12 @@ namespace Webshop.Infrastructure.Services
             var shopItem = await _repository.GetByIdAsync(id);
             if (shopItem == null) throw new Exception("ShopItem not found.");
 
-            shopItem = new ShopItem(
-                itemDto.Name, itemDto.Description, itemDto.Price,
-                itemDto.ImageUrl, itemDto.StockQuantity, itemDto.Category);
+            shopItem.Name = itemDto.Name;
+            shopItem.Description = itemDto.Description;
+            shopItem.Price = itemDto.Price;
+            shopItem.ImageUrl = itemDto.ImageUrl;
+            shopItem.StockQuantity = itemDto.StockQuantity;
+            shopItem.Category = itemDto.Category;
 
             await _repository.SaveChangesAsync();
         }

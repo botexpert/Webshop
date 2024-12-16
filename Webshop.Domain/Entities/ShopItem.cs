@@ -2,15 +2,15 @@ namespace Webshop.Domain.Entities
 {
     public class ShopItem
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; }
-        public string Description { get; private set; }
-        public decimal Price { get; private set; }
-        public decimal? DiscountedPrice { get; private set; }
-        public string ImageUrl { get; private set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
+        public decimal? DiscountedPrice { get; set; }
+        public string ImageUrl { get; set; }
         // public bool IsFavorite { get; private set; }
-        public int StockQuantity { get; private set; }
-        public string Category { get; private set; }
+        public int StockQuantity { get; set; }
+        public string Category { get; set; }
 
         public ShopItem(string name, string description, decimal price, string imageUrl, int stockQuantity, string category)
         {

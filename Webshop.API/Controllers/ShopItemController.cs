@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Webshop.Application.DTOs;
 using Webshop.Application.Interfaces;
 
+// [Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class ShopItemsController : ControllerBase
